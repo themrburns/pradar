@@ -125,7 +125,7 @@ setmetatable(t, mt)
 
 while true do
     sleep(0)
-    local list = pd.getPlayersInRange(2)
+    local list = pd.getPlayersInRange(100)
     for _, accessor in pairs(_t) do
         if not contains(list, accessor) then t[accessor] = nil end
     end
